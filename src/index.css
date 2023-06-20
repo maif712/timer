@@ -1,0 +1,28 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    * {
+        @apply font-poppins
+    }
+
+    body {
+        /* @apply flex items-center justify-center min-h-screen */
+    }
+
+    .my-container {
+        @apply max-w-[600px] my-0 mx-auto
+    }
+
+    @media (min-width: 375px) {
+        body {
+            @apply p-2
+        }
+    }
+}
