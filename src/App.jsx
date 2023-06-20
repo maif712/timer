@@ -121,7 +121,7 @@ export default function App() {
                 <option value="5">5 min</option>
             </select>
             <div className="flex flex-col gap-4 min-[376px]:flex-row  min-[376px]:grid min-[376px]:grid-cols-2">
-                <div className="bg-white p-2 flex flex-col gap-2 rounded-md shadow-md">
+                <div className="bg-white p-2 flex flex-col gap-2 rounded-md shadow-md rotate-180">
                     <div className="flex flex-col gap-2 justify-center items-center">
                         {/* <h2 className="text-white font-bold uppercase rounded-md p-2 bg-black">White</h2> */}
                         <p className="p-2 bg-green-600 text-white rounded-md shadow-md w-[100px] text-center">{playerOneMinute < 10 ? `0${playerOneMinute}` : playerOneMinute}:{playerOneSecond < 10 ? `0${playerOneSecond}` : playerOneSecond}</p>
