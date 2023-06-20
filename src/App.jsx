@@ -76,8 +76,8 @@ export default function App() {
     const handleStopTimer = () => {
         setIsStop(true)
         setIsPlayerOne(false)
-        setIsPlayerTwo(false)  
-        setIsStart(true)      
+        setIsPlayerTwo(false)
+        setIsStart(true)
     }
 
     function SetSecondTimer() {
@@ -119,15 +119,15 @@ export default function App() {
                 <option value="5">5 min</option>
             </select>
             <div className="flex flex-col gap-4 min-[376px]:flex-row  min-[376px]:grid min-[376px]:grid-cols-2">
-                <div className="bg-white p-2 flex flex-col gap-2">
+                <div className="bg-white p-2 flex flex-col gap-2 rounded-md">
                     <div className="flex flex-col gap-2 justify-center items-center">
                         <h2 className="text-white font-bold uppercase rounded-md p-2 bg-black">White</h2>
                         <p className="p-2 bg-green-600 text-white rounded-md shadow-md w-[100px] text-center">{playerOneMinute < 10 ? `0${playerOneMinute}` : playerOneMinute}:{playerOneSecond < 10 ? `0${playerOneSecond}` : playerOneSecond}</p>
                     </div>
                     <button className="bg-[#7fa650] hover:bg-[#95bb4a] text-white font-semibold rounded-md p-6 text-lg shadow-md" onClick={handlePlayerOneTimer}>White Timer</button>
                 </div>
-                <div className="bg-[#2b2825] p-2 flex flex-col gap-2">
-                <div className="flex flex-col gap-2 justify-center items-center">
+                <div className="bg-[#2b2825] p-2 flex flex-col gap-2 rounded-md">
+                    <div className="flex flex-col gap-2 justify-center items-center">
                         <h2 className="bg-white text-black uppercase p-2 rounded-md font-bold">Black</h2>
                         <p className="p-2 bg-green-600 text-white rounded-md shadow-md w-[100px] text-center">{playerTwoMinute < 10 ? `0${playerTwoMinute}` : playerTwoMinute}:{PlayerTwoSecond < 10 ? `0${PlayerTwoSecond}` : PlayerTwoSecond}</p>
                     </div>
