@@ -64,7 +64,7 @@ export default function App() {
         return () => {
             clearInterval(test)
         }
-    }, [isPlayerTwo])
+    }, [isPlayerTwo, PlayerTwoSecond])
 
 
     const setMyTimer = () => {
